@@ -1,0 +1,9 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+    - name: Copy the file
+      copy:
+        src: /home/pvb2021/abcd.txt
+        dest: /tmp
+
